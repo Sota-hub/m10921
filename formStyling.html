@@ -11,49 +11,41 @@
     />
     <style>
       * {
-        /* 
-        -May want to add "border-box for "box-sizing so padding does not affect width
-        -Reset margin and padding 
-       */
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
       }
 
       body {
-        /* 
-          -Background color is #344a72
-        */
+        background-color: #344a72;
       }
 
       a {
-        /* 
-        Underlined links are ugly :)
-       */
+        text-decoration: none;
       }
 
       #container {
-        /* 
-        -Remember, margin: auto on left and right will center a block element 
-        -I would also set a "max-width" for responsiveness
-        -May want to add some padding
-        */
+        margin: 0 auto;
       }
 
       .form-wrap {
-        /* 
-          This is the white area around the form and heading, etc
-        */
+        background-color: white;
+        padding-top: 10px;
+        width: 400px;
+        margin: auto;
+        margin-top: 40px;
       }
 
       .form-wrap h1,
       .form-wrap p {
-        /* 
-          May want to center these
-        */
+        text-align: center;
       }
 
       .form-wrap .form-group {
-        /* 
-          Each label, input is wrapped in .form-group
-        */
+        color: gray;
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 15px;
       }
 
       .form-wrap .form-group label {
@@ -66,9 +58,13 @@
       }
 
       .form-wrap button {
-        width: 100%;
+        width: 300px;
+        height: 55px;
         display: block;
+        margin: 0 auto;
+        margin-top: 20px;
         background-color: #49c1a2;
+        color: white;
       }
 
       .form-wrap button:hover {
@@ -77,12 +73,18 @@
 
       .form-wrap .bottom-text {
         font-size: smaller;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 330px;
+        margin: 0 auto;
       }
 
       footer {
+        margin-top: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
+        color: white;
       }
 
       footer a {
